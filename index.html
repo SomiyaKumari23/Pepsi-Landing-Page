@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pepsi</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body id="somiya">
+    <header>
+        <img src="logo.png">
+        <nav>
+            <ul class="navbar">
+                <li><a href="#">home</a></li>
+                <li><a href="#">products</a></li>
+                <li><a href="#">what's new</a></li>
+                <li><a href="#">newsletter</a></li>
+                <li><a href="#">contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <div class="upper">
+            <h2>THAT'S WHAT</h2>
+            <h1>I LIKE</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, consequatur, distinctio,<br>
+                natus repellendus beatae provident deleniti mollitia sed sint iure soluta iste perferendis<br>
+                nulla adipisci! Necessitatibus repudiandae iusto laboriosam enim?</p>
+            <a class="button" href="">VIEW ALL PRODUCTS</a>
+        </div>
+        <div class="jayant">
+            <img id="pepsi" src="pepsi001.png">
+            <div class="social">
+                <ul>
+                    <li><img class="facebook"src="facebook (1).png"</li>
+                    <li><img src="twitter.png"</li>
+                    <li><img src="instagram.png"</li>
+                </ul>
+            </div>
+        </div>
+        
+    </section>
+    <footer>
+        <div>
+            <ul>
+                <li><img onclick="myFunction('pepsi001.png')" src="pepsi001.png"</li>
+                <li> <img onclick="myFunction('pepsi002.png')"src="pepsi002.png"</li>
+                <li><img onclick="myFunction('pepsi003.png')"src="pepsi003.png"</li>
+            </ul>
+        </div>
+       
+    </footer>
+    <script>
+        function myFunction(anything){
+            document.getElementById('pepsi').src=anything;
+            if(anything=='pepsi001.png')
+            document.body.style.backgroundColor = '	#073d7b';
+            if(anything=='pepsi002.png')
+            document.body.style.backgroundColor = 'red';
+            if(anything=='pepsi003.png')
+            document.body.style.backgroundColor='#211f14';
+        }
+    </script>
+</body>
+</html>
